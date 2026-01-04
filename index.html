@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luna Red | Grupo VIP Telegram</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --primary: #ff4d4d;
+        --bg: #0a0a0a;
+        --card: #161616;
+        --text: #ffffff;
+      }
+      body {
+        background: var(--bg);
+        color: var(--text);
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      /* Hero Section */
+      header {
+        padding: 60px 20px;
+      }
+      .profile-img {
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        border: 3px solid var(--primary);
+        object-fit: cover;
+        box-shadow: 0 0 25px rgba(255, 77, 77, 0.5);
+        margin-bottom: 20px;
+      }
+      h1 {
+        font-size: 2.8rem;
+        margin: 10px 0;
+        letter-spacing: -1px;
+      }
+      .subtitle {
+        color: #bbb;
+        font-size: 1.1rem;
+        margin-bottom: 30px;
+        line-height: 1.5;
+      }
+
+      /* Teaser Gallery */
+      .gallery-title {
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: var(--primary);
+        margin-bottom: 20px;
+      }
+      .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 15px;
+        margin-bottom: 50px;
+      }
+      .gallery img {
+        width: 100%;
+        height: 350px;
+        border-radius: 12px;
+        object-fit: cover;
+        filter: brightness(0.8);
+        transition: 0.4s;
+      }
+      .gallery img:hover {
+        filter: brightness(1.1);
+        transform: translateY(-5px);
+      }
+
+      /* Pricing Cards */
+      .pricing {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+      }
+      .card {
+        background: var(--card);
+        border-radius: 24px;
+        padding: 40px;
+        width: 350px;
+        border: 2px solid var(--primary);
+        position: relative;
+        box-shadow: 0 10px 30px rgba(255, 77, 77, 0.2);
+      }
+      .card h3 {
+        font-size: 1.8rem;
+        margin-bottom: 5px;
+        color: var(--primary);
+      }
+      .price {
+        font-size: 3.5rem;
+        font-weight: 700;
+        margin: 15px 0;
+        color: #fff;
+      }
+      .price span {
+        font-size: 1rem;
+        color: #888;
+      }
+      .list {
+        text-align: left;
+        padding: 0;
+        list-style: none;
+        margin-bottom: 35px;
+      }
+      .list li {
+        margin-bottom: 12px;
+        font-size: 1rem;
+        color: #ccc;
+        display: flex;
+        align-items: center;
+      }
+      .list li::before {
+        content: '✓';
+        color: var(--primary);
+        font-weight: bold;
+        margin-right: 10px;
+      }
+
+      .buy-btn {
+        display: block;
+        background: var(--primary);
+        color: white;
+        text-decoration: none;
+        padding: 20px;
+        border-radius: 50px;
+        font-weight: 700;
+        font-size: 1.2rem;
+        transition: 0.3s;
+        box-shadow: 0 5px 15px rgba(255, 77, 77, 0.3);
+      }
+      .buy-btn:hover {
+        background: #ff1a1a;
+        transform: scale(1.05);
+      }
+
+      footer {
+        padding: 60px 20px;
+        font-size: 0.8rem;
+        color: #444;
+        border-top: 1px solid #1a1a1a;
+        margin-top: 50px;
+      }
+
+      @media (max-width: 768px) {
+        .gallery { grid-template-columns: 1fr; }
+        .card { width: 100%; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img
+          src="https://i.ibb.co/7NtTD05h/face.jpg"
+          alt="Luna Red Face"
+          class="profile-img"
+        />
+        <h1>Luna <span style="color: var(--primary)">Red</span></h1>
+        <p class="subtitle">
+          19 anos | A ruiva baixinha que você queria no seu feed 📍<br />
+          Tudo o que o Instagram não permite ver.
+        </p>
+      </header>
+
+      <p class="gallery-title">Meus segredos agora são seus</p>
+      <div class="gallery">
+        <img src="https://i.ibb.co/gZfs43KQ/praia.jpg" alt="Luna na praia" />
+        <img src="https://i.ibb.co/PJwYBf4/morro-a-melhor-blur.png" alt="Luna exclusiva" />
+        <img src="https://i.ibb.co/JRdZB5qC/sacada2.jpg" alt="Luna na sacada" />
+      </div>
+
+      <section class="pricing">
+        <div class="card">
+          <div style="background: var(--primary); position: absolute; top: 12px; right: -35px; transform: rotate(45deg); width: 130px; font-size: 0.75rem; font-weight: 700; padding: 3px 0;">
+            OFERTA VIP
+          </div>
+          <h3>Acesso VIP Telegram</h3>
+          <div class="price">R$ 29<span>,99</span></div>
+          <ul class="list">
+            <li><b>Acesso por 30 dias</b> (Renovável)</li>
+            <li>Fotos diárias exclusivas e sem censura</li>
+            <li>Vídeos inéditos em 4K</li>
+            <li>Bastidores que ninguém mais vê</li>
+            <li>Interação direta e conteúdos quentes ♥</li>
+          </ul>
+          <a href="https://mpago.li/24zzXCL" class="buy-btn">QUERO ENTRAR NO VIP</a>
+        </div>
+      </section>
+
+      <footer>
+        <p>
+          © 2026 Luna Red Oficial. Apenas para maiores de 18 anos.<br />
+          Pagamentos seguros via Mercado Pago (Pix e Cartão).<br />
+          Conteúdo gerado digitalmente para entretenimento.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
